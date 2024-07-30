@@ -32,7 +32,7 @@ You can run the application using the following command:
 flutter run -d chrome
 ## 👉OutPut
 
-  <img src="https://github.com/user-attachments/assets/19367164-d233-42f8-a7c9-d1bae126250a" alt="Screenshot" width="300" height="250">
-  <img src="https://github.com/user-attachments/assets/e9cf93e8-65d0-4e30-8fb1-a14bc6d7fc3c" alt="Screenshot" width="300" height="250 ">
-  <img src="https://github.com/user-attachments/assets/c926e1c7-43de-4e19-bf25-079fdfcaa3e1" alt="Screenshot" width="300" height="250">
+  <img src="https://github.com/user-attachments/assets/19367164-d233-42f8-a7c9-d1bae126250a" alt="Screenshot" width="250" height="250">
+  <img src="https://github.com/user-attachments/assets/e9cf93e8-65d0-4e30-8fb1-a14bc6d7fc3c" alt="Screenshot" width="250" height="250 ">
+  <img src="https://github.com/user-attachments/assets/c926e1c7-43de-4e19-bf25-079fdfcaa3e1" alt="Screenshot" width="250" height="250">
 
