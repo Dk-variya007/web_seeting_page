@@ -173,10 +173,12 @@ class _BillingTabState extends State<BillingTab> {
                 style: TextStyle(color: Colors.white),
               ),
               trailing: SizedBox(
-                width: 150,
-                child: ElevatedButton(
-                    onPressed: () {}, child: const Text('Upgrade plan')),
-              ),
+                  width: 150,
+                  child: ElevatedButton.icon(
+                    onPressed: () {},
+                    label: const Text("Upgrade plan"),
+                    icon: const Icon(Icons.upgrade),
+                  )),
             ),
             const ListTile(
               title: Text('Monthly Credits left'),
