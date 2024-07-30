@@ -21,7 +21,7 @@ class BillingTab extends StatelessWidget {
           const Divider(),
           DataTable(
             columns: const [
-              DataColumn(label: Text('Features')),
+              DataColumn(label: Text('Features',style: TextStyle(color: Colors.white),)),
               DataColumn(label: Text('Free')),
               DataColumn(label: Text('Pro')),
               DataColumn(label: Text('Enterprise')),
