@@ -173,7 +173,7 @@ class _BillingTabState extends State<BillingTab> {
                 style: TextStyle(color: Colors.white),
               ),
               trailing: SizedBox(
-                  width: 150,
+                  width: 200,
                   child: ElevatedButton.icon(
                     onPressed: () {},
                     label: const Text("Upgrade plan"),
