@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
 Clone the repository to your local machine using the following command:
 git clone <repository-url>
 ### Step 2: Navigate to the Project Directory
-cd (repository-directory
+cd (repository-directory)
 ### Step 3: Install Dependencies
 Run the following command to install the required dependencies:
 flutter pub get
