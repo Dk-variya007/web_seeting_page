@@ -12,7 +12,7 @@ class BillingTab extends StatelessWidget {
           ListTile(
             title: const Text(
               'You are using the FREE VERSION of Product',
-              style: TextStyle(color: Colors.pink),
+              style: TextStyle(color: Colors.yellow),
             ),
             trailing: ElevatedButton(
                 onPressed: () {}, child: const Text('Upgrade plan')),
