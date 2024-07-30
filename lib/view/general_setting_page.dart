@@ -21,12 +21,15 @@ class _GeneralSettingsTabState extends State<GeneralSettingsTab> {
           const Padding(
             padding: EdgeInsets.only(left: 14),
             child: Text("Email preferences",
-                style: TextStyle(color: Colors.white, fontSize: 20)),
+                style: TextStyle(color: Colors.white, fontSize: 15)),
           ),
           SwitchListTile(
             inactiveThumbColor: Colors.white,
             activeColor: Colors.white,
-            title: const Text('Updates'),
+            title: const Text(
+              'Updates',
+              style: TextStyle(color: Colors.grey, fontSize: 12),
+            ),
             value: iconValue1,
             onChanged: (bool value) {
               setState(() {
@@ -38,7 +41,10 @@ class _GeneralSettingsTabState extends State<GeneralSettingsTab> {
           SwitchListTile(
             inactiveThumbColor: Colors.white,
             activeColor: Colors.white,
-            title: const Text('Recommendations'),
+            title: const Text(
+              'Recommendations',
+              style: TextStyle(color: Colors.grey, fontSize: 12),
+            ),
             value: iconValue2,
             onChanged: (bool value) {
               setState(() {

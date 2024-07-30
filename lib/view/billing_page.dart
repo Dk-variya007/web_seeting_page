@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_setting_page/helper/custome_divider.dart';
 
 class BillingTab extends StatelessWidget {
   const BillingTab({super.key});
@@ -19,7 +20,7 @@ class BillingTab extends StatelessWidget {
           ),
           const ListTile(
             title: Text('Monthly Credits left'),
-            subtitle: Text('150 of 200'),
+            trailing: Text('150 of 200'),
           ),
           const Divider(),
           DataTable(
@@ -39,45 +40,105 @@ class BillingTab extends StatelessWidget {
                 'Pro',
                 style: TextStyle(color: Colors.white),
               )),
-              DataColumn(label: Text('Enterprise')),
+              DataColumn(
+                  label: Text(
+                'Enterprise',
+                style: TextStyle(color: Colors.white),
+              )),
             ],
-            rows: const [
-              DataRow(cells: [
-                DataCell(Text('Credits')),
-                DataCell(Text('Limited (200 monthly)')),
-                DataCell(Text('Unlimited')),
-                DataCell(Text('Unlimited')),
+            rows: [
+              const DataRow(cells: [
+                DataCell(Text(
+                  'Credits',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'Limited (200 monthly)',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'Unlimited',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'Unlimited',
+                  style: TextStyle(color: Colors.white),
+                )),
+              ]),
+              const DataRow(cells: [
+                DataCell(Text(
+                  'Resolution',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  '360p, 720p',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  '1080p',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  '1080p',
+                  style: TextStyle(color: Colors.white),
+                )),
+              ]),
+              const DataRow(cells: [
+                DataCell(Text(
+                  'Images',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'AI Generated',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'AI Generated, Manual',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'AI Generated, Manual',
+                  style: TextStyle(color: Colors.white),
+                )),
+              ]),
+              const DataRow(cells: [
+                DataCell(Text(
+                  'Export Formats',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'PNG',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'PNG, WEBP',
+                  style: TextStyle(color: Colors.white),
+                )),
+                DataCell(Text(
+                  'PNG, JPEG, WEBP',
+                  style: TextStyle(color: Colors.white),
+                )),
               ]),
               DataRow(cells: [
-                DataCell(Text('Resolution')),
-                DataCell(Text('360p, 720p')),
-                DataCell(Text('1080p')),
-                DataCell(Text('1080p')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('Images')),
-                DataCell(Text('AI Generated')),
-                DataCell(Text('AI Generated, Manual')),
-                DataCell(Text('AI Generated, Manual')),
-              ]),
-              DataRow(cells: [
-                DataCell(Text('Export Formats')),
-                DataCell(Text('PNG')),
-                DataCell(Text('PNG, WEBP')),
-                DataCell(Text('PNG, JPEG, WEBP')),
+                const DataCell(Text(
+                  '',
+                )),
+                const DataCell(Text(
+                  '',
+                )),
+                DataCell(
+                  ElevatedButton(
+                      onPressed: () {}, child: const Text('Upgrade to PRO')),
+                ),
+                DataCell(
+                  ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Upgrade to ENTERPRISE')),
+                )
               ]),
             ],
           ),
-          const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                  onPressed: () {}, child: const Text('Upgrade to PRO')),
-              ElevatedButton(
-                  onPressed: () {}, child: const Text('Upgrade to ENTERPRISE')),
-            ],
-          ),
+          const Divider()
         ],
       ),
     );
