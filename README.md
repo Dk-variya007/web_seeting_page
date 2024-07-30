@@ -1,19 +1,19 @@
 # Flutter Web Application - Settings Page
 
-## Overview
+## 👉Overview
 This Flutter Web application contains a Settings page with three tabs: 
 1. Account Settings
 2. General Settings
 3. Billing
 
-## Prerequisites
+## 👉Prerequisites
 Before you begin, ensure you have met the following requirements:
 - You have installed [Flutter](https://flutter.dev/docs/get-started/install) version 2.0.0 or later.
 - You have a recent version of [Dart](https://dart.dev/get-dart) installed.
 - You have a web browser (e.g., Chrome, Firefox) for testing the application.
 - You have an IDE such as [VSCode](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio) configured for Flutter development.
 
-## Setup
+## 👉Setup
 
 ### Step 1: Clone the Repository
 Clone the repository to your local machine using the following command:
@@ -23,7 +23,7 @@ cd (repository-directory
 ### Step 3: Install Dependencies
 Run the following command to install the required dependencies:
 flutter pub get
-## Running the Application
+## 👉Running the Application
 ### Step 1: Configure Flutter for Web
 Ensure that Flutter is configured for web development:
 flutter config --enable-web
