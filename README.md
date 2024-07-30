@@ -30,3 +30,8 @@ flutter config --enable-web
 ### Step 2: Run the Application
 You can run the application using the following command:
 flutter run -d chrome
+## 👉OutPut
+<img src="https://github.com/user-attachments/assets/19367164-d233-42f8-a7c9-d1bae126250a" alt="Screenshot" width="350" height="250">
+<img src="https://github.com/user-attachments/assets/19367164-d233-42f8-a7c9-d1bae126250a" alt="Screenshot" width="350" height="250">
+
+
