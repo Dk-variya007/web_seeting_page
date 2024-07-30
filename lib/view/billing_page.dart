@@ -164,48 +164,51 @@ class _BillingTabState extends State<BillingTab> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: ListView(
-        children: [
-          ListTile(
-            title: const Text(
-              'You are using the FREE VERSION of Product',
-              style: TextStyle(color: Colors.white),
+      child: SizedBox(
+        child: ListView(
+          children: [
+            ListTile(
+              title: const Text(
+                'You are using the FREE VERSION of Product',
+                style: TextStyle(color: Colors.white),
+              ),
+              trailing: SizedBox(
+                width: 150,
+                child: ElevatedButton(
+                    onPressed: () {}, child: const Text('Upgrade plan')),
+              ),
             ),
-            trailing: SizedBox(
-              width: 150,
-              child: ElevatedButton(
-                  onPressed: () {}, child: const Text('Upgrade plan')),
+            const ListTile(
+              title: Text('Monthly Credits left'),
+              trailing: Text('150 of 200'),
             ),
-          ),
-          const ListTile(
-            title: Text('Monthly Credits left'),
-            trailing: Text('150 of 200'),
-          ),
-          const Text(
-            "Plans",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const Divider(
-            color: Colors.grey,
-            height: 1,
-          ),
-          Table(
-            children: [_tableRow1],
-          ),
-          Table(
-            border: TableBorder.all(color: Colors.grey),
-            children: [
-              _tableRow2,
-              _tableRow3,
-              _tableRow4,
-              _tableRow5,
-              _tableRow6
-            ],
-          ),
-        ],
+            const Text(
+              "Plans",
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Divider(
+              color: Colors.grey,
+              height: 1,
+            ),
+            Table(
+              children: [_tableRow1],
+            ),
+            Table(
+              border: TableBorder.all(color: Colors.grey),
+              children: [
+                _tableRow2,
+                _tableRow3,
+                _tableRow4,
+                _tableRow5,
+                _tableRow6
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
