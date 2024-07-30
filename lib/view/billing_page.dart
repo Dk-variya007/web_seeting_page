@@ -10,7 +10,10 @@ class BillingTab extends StatelessWidget {
       child: ListView(
         children: [
           ListTile(
-            title: const Text('You are using the FREE VERSION of Product',style: TextStyle(color: Colors.pink),),
+            title: const Text(
+              'You are using the FREE VERSION of Product',
+              style: TextStyle(color: Colors.pink),
+            ),
             trailing: ElevatedButton(
                 onPressed: () {}, child: const Text('Upgrade plan')),
           ),
@@ -21,9 +24,21 @@ class BillingTab extends StatelessWidget {
           const Divider(),
           DataTable(
             columns: const [
-              DataColumn(label: Text('Features',style: TextStyle(color: Colors.white),)),
-              DataColumn(label: Text('Free')),
-              DataColumn(label: Text('Pro')),
+              DataColumn(
+                  label: Text(
+                'Features',
+                style: TextStyle(color: Colors.white),
+              )),
+              DataColumn(
+                  label: Text(
+                'Free',
+                style: TextStyle(color: Colors.white),
+              )),
+              DataColumn(
+                  label: Text(
+                'Pro',
+                style: TextStyle(color: Colors.white),
+              )),
               DataColumn(label: Text('Enterprise')),
             ],
             rows: const [
@@ -57,8 +72,10 @@ class BillingTab extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ElevatedButton(onPressed: () {}, child: const Text('Upgrade to PRO')),
-              ElevatedButton(onPressed: () {}, child: const Text('Upgrade to ENTERPRISE')),
+              ElevatedButton(
+                  onPressed: () {}, child: const Text('Upgrade to PRO')),
+              ElevatedButton(
+                  onPressed: () {}, child: const Text('Upgrade to ENTERPRISE')),
             ],
           ),
         ],
